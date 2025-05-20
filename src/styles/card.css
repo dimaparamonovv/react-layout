@@ -1,0 +1,153 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.card-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card-logo {
+  width: 220px;
+  height: 188px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card-info {
+  flex: 1;
+  font-size: 16px;
+  color: #2a2e5d;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.card-info-item.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.card-info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.address {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c6f84;
+}
+
+.map-link {
+  color: #ff9800;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-gallery {
+  min-width: 240px;
+}
+
+.gallery-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #20264c;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 8px;
+}
+
+.gallery-images img {
+  width: 177px;
+  height: 147px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.more-photos {
+  position: relative;
+}
+
+.more-photos .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.card-divider {
+  border: none;
+  border-top: 1px solid #e6e7eb;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  color: #2a2e5d;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 240px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #e08800;
+}
