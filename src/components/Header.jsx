@@ -1,7 +1,7 @@
 import "../styles/header.css";
 
-import logo from "../ui/logo.svg";
-import langSelector from "../ui/lang-selector.svg";
+import logo from "../assets/logo.svg";
+import langSelector from "../assets/lang-selector.svg";
 
 export default function Header() {
   return (
@@ -10,20 +10,31 @@ export default function Header() {
         <img className="logo" src={logo}></img>
 
         <nav className="nav">
-          <a href="#" className="nav-item">
-            Для бизнеса
-          </a>
+          <ul className="nav-list">
+            <li>
+              <a href="#" className="nav-item">
+                Для бизнеса
+              </a>
+            </li>
 
-          <div className="language-selector">
-            <img src={langSelector} alt="Русский флаг" className="flag" />
-          </div>
+            <li>
+              <div className="language-selector">
+                <img src={langSelector} alt="Русский флаг" className="flag" />
+              </div>
+            </li>
 
-          <a href="#" className="register-btn">
-            Регистрация
-          </a>
-          <a href="#" className="login">
-            Вход
-          </a>
+            <li>
+              <a href="#" className="register-btn">
+                Регистрация
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="login">
+                Вход
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>

@@ -1,15 +1,15 @@
 import "../styles/card.css";
 
-import cardLogo from "../ui/card-logo.jpg";
-import example from "../ui/example.png";
-import iconTrash from "../ui/trash.svg";
-import iconLocation from "../ui/location.svg";
-import iconPhone from "../ui/phone.svg";
-import iconClock from "../ui/clock.svg";
+import cardLogo from "../assets/card-logo.jpg";
+import example from "../assets/example.png";
+import iconTrash from "../assets/trash.svg";
+import iconLocation from "../assets/location.svg";
+import iconPhone from "../assets/phone.svg";
+import iconClock from "../assets/clock.svg";
 
 export default function Card({ address, phone }) {
   return (
-    <div className="card">
+    <article className="card">
       <div className="card-main">
         <img src={cardLogo} alt="Логотип" className="card-logo" />
 
@@ -62,6 +62,6 @@ export default function Card({ address, phone }) {
 
         <button className="book-btn">Записаться</button>
       </div>
-    </div>
+    </article>
   );
 }
